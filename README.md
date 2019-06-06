@@ -1,2 +1,2 @@
 # lab_internal
-gnlab wiki
+[wiki](https://github.com/ganong-noel/lab_internal/wiki)
