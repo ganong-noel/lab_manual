@@ -1,0 +1,1860 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{booktabs}
+\usepackage{graphicx}
+
+\usepackage[font={bf,sf}]{caption}
+
+\usepackage{etoc}
+\captionsetup{format=hang}
+
+\usepackage{bibunits}
+\renewcommand{\@bibunitname}{\jobname.\the\@bibunitauxcnt}
+
+\usepackage{titlesec}
+\titlespacing\section{0pt}{18pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{16pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\end_preamble
+\options 11pt
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "lmodern" "default"
+\font_sans "default" "default"
+\font_typewriter "courier" "default"
+\font_math "auto" "auto"
+\font_default_family rmdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\multibib part
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\branch data & external validity
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch data-appendix
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch empirics
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch model
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch intro
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch normative
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch data
+\selected 1
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.25in
+\topmargin 1in
+\rightmargin 1.25in
+\bottommargin 1in
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Title: Subtitle
+\end_layout
+
+\begin_layout Author
+Peter Ganong and Pascal Noel
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ganong@uchicago.edu (Harris School of Public Policy, 1155 East 60th Street,
+ Chicago, IL 60637), pnoel@uchicago.edu (Booth School of Business, 5807 South
+ Woodlawn Avenue, Chicago, IL 60637).
+ This paper was previously circulated as 
+\begin_inset Quotes eld
+\end_inset
+
+Previous Name
+\begin_inset Quotes erd
+\end_inset
+
+ We thank lots of people.
+ The opinions expressed are those of the authors alone and do not represent
+ the views of JPMorgan Chase & Co.
+ While working on this paper, Ganong and Noel were compensated for providing
+ research advice on public reports produced by JPMCI's research team.
+ We gratefully acknowledge funding from all these places
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+This is a paper that tells us something about the world.
+ This is the abstract, but we say more things in the main text.
+ Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+ Aenean commodo ligula eget dolor.
+ Aenean massa.
+ Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+ ridiculus mus.
+ Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+ Nulla consequat massa quis enim.
+ Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+ In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+ Nullam dictum felis eu pede mollis pretium.
+ Integer tincidunt.
+ Cras dapibus.
+ Vivamus elementum semper nisi.
+ Aenean vulputate eleifend
+\end_layout
+
+\begin_layout Abstract
+Keywords: Keyword 1, Keyword 2, Keyword 3
+\end_layout
+
+\begin_layout Abstract
+JEL Codes: E21, E24, J65 
+\size footnotesize
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+
+\size footnotesize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtocontents{toc}{
+\backslash
+protect
+\backslash
+setcounter{tocdepth}{0}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{bibunit}[apalike]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\size footnotesize
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+You can put notes here that will not show up when printing.
+ For example: 
+\end_layout
+
+\begin_layout Plain Layout
+LLL is legacy text from the old draft that I've left in a note for reference
+ but will probably delete soon
+\end_layout
+
+\begin_layout Plain Layout
+xxx is stuff I need to fix or a stat in the text to fill in
+\end_layout
+
+\begin_layout Plain Layout
+ccc is a cite
+\end_layout
+
+\begin_layout Plain Layout
+sss is a stat in a note to update
+\end_layout
+
+\begin_layout Plain Layout
+BACKGROUND
+\end_layout
+
+\begin_layout Plain Layout
+SOURCING
+\end_layout
+
+\end_inset
+
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua.
+ Ornare massa eget egestas purus.
+ Sodales ut etiam sit amet nisl purus.
+ Velit scelerisque in dictum non consectetur a erat nam at.
+ Ut diam quam nulla porttitor massa id neque aliquam vestibulum.
+ Aliquam eleifend mi in nulla posuere sollicitudin aliquam.
+ Platea dictumst quisque sagittis purus.
+ Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum.
+ Eros in cursus turpis massa tincidunt dui ut.
+ Neque ornare aenean euismod elementum nisi quis.
+ Condimentum id venenatis a condimentum vitae sapien pellentesque habitant.
+ Turpis tincidunt id aliquet risus feugiat in ante.
+ Quisque non tellus orci ac auctor.
+ Iaculis at erat pellentesque adipiscing commodo elit at.
+ Elit scelerisque mauris pellentesque pulvinar.
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua.
+ Ornare massa eget egestas purus.
+ Sodales ut etiam sit amet nisl purus.
+ Velit scelerisque in dictum non consectetur a erat nam at.
+ Ut diam quam nulla porttitor massa id neque aliquam vestibulum.
+ Aliquam eleifend mi in nulla posuere sollicitudin aliquam.
+ Platea dictumst quisque sagittis purus.
+ Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum.
+ Eros in cursus turpis massa tincidunt dui ut.
+ Neque ornare aenean euismod elementum nisi quis.
+ Condimentum id venenatis a condimentum vitae sapien pellentesque habitant.
+ Turpis tincidunt id aliquet risus feugiat in ante.
+ Quisque non tellus orci ac auctor.
+ Iaculis at erat pellentesque adipiscing commodo elit at.
+ Elit scelerisque mauris pellentesque pulvinar.
+\end_layout
+
+\begin_layout Section
+Section 2 - Whitespace, Equations, References, etc..
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Branch empirics
+inverted 0
+status open
+
+\begin_layout Subsection
+Whitespace
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:first_subsec"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We have previously had issues with the whitespace between sections.
+ This document manages whitespace between sections using the titlesec package.
+ To change whitespace options, do the following:
+\end_layout
+
+\begin_layout Enumerate
+Navigate to Documents -> Settings...
+ LaTeX Preamble
+\end_layout
+
+\begin_layout Enumerate
+Change the titlespacing commands
+\end_layout
+
+\begin_layout Enumerate
+A titlespacing command has the format 
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+titlespacing{command}{left spacing}{before spacing}{after spacing}[right]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Where a spacing argument such as 
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+{12pt plus 4pt minus 2pt}
+\end_layout
+
+\end_inset
+
+ means we would like 12 pt spacing, plus 4 pt means TeX can stretch by at
+ most 4pt, and minus 2pt means Tex can shrink it by at most 2pt
+\end_layout
+
+\begin_layout Standard
+The spacing used for the HAMP draft submitted in May 2019:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Section
+\series default
+ before spacing = {18pt plus 4pt minus 2pt} after spacing ={0pt plus 2pt
+ minus 2pt}
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Subsection
+\series default
+ before spacing = {16pt plus 4pt minus 2pt} after spacing = {0pt plus 2pt
+ minus 2pt}
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Subsubsection
+\series default
+ before spacing = {12pt plus 4pt minus 2pt} after spacing = {0pt plus 2pt
+ minus 2pt}
+\end_layout
+
+\begin_layout Standard
+For this document, the spacing used is:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Section
+\series default
+ before spacing = {24pt plus 2pt minus 2pt} after spacing = {8pt plus 2pt
+ minus 2pt}
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Subsection
+\series default
+ before spacing = {20pt plus 2pt minus 2pt} after spacing = {6pt plus 2pt
+ minus 2pt}
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Subsubsection
+\series default
+ before spacing = {12pt plus 4pt minus 2pt} after spacing = {0pt plus 2pt
+ minus 2pt}
+\end_layout
+
+\begin_layout Subsubsection
+Equations
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:math"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+You can do a bunch of math using latex equations.
+ Formally, let 
+\begin_inset Formula $y$
+\end_inset
+
+ be the outcome of interest, either income or consumption.
+ We define 
+\begin_inset Formula $i$
+\end_inset
+
+ as a household, 
+\begin_inset Formula $t$
+\end_inset
+
+ as months since first UI receipt, and 
+\begin_inset Formula $n$
+\end_inset
+
+ as the number of households in the analysis group at time 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Prior to onset, 
+\begin_inset Formula $\bar{y}_{t}=\frac{1}{n}\sum_{i}y_{i,t}$
+\end_inset
+
+ and all future UI recipients are included in the sample.
+ In month 
+\begin_inset Formula $t=0$
+\end_inset
+
+, everyone who gets one full month of UI is included, in month 
+\begin_inset Formula $t=1$
+\end_inset
+
+, everyone who gets two full months of UI is included, and so on.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua.
+ Ornare massa eget egestas purus.
+ Sodales ut etiam sit amet nisl purus.
+ Velit scelerisque in dictum non consectetur a erat nam at.
+ Ut diam quam nulla porttitor massa id neque aliquam vestibulum.
+ Aliquam eleifend mi in nulla posuere sollicitudin aliquam.
+\end_layout
+
+\end_inset
+
+ Each point in the figure is estimated as
+\begin_inset Formula 
+\begin{eqnarray}
+\Delta y_{t} & = & \frac{\sum_{i\in\mbox{U duration}>t}y_{i,t}-y_{i,t-1}}{\sum1(i\in\mbox{U duration}>t)}\label{eq:changing-sample}\\
+\bar{y}_{t} & = & \Delta y_{t}+\bar{y}_{t-1}.\label{eq:ts-with-changing-sample}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+References
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:References"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Automatic figure and table references work.
+ For example, I can refer to figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Inc-spend-if-stay-unemp"
+
+\end_inset
+
+.
+ I can also refer to other sections in the paper, such as subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:blindtext"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ Additionally, you can also do things in footnotes
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+You can do references in footnotes too.
+ For example, I can refer to subsection 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:math"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ here.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+A New Subsection with some blindtext
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:blindtext"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+ tempor incididunt ut labore et dolore magna aliqua.
+ Ornare massa eget egestas purus.
+ Sodales ut etiam sit amet nisl purus.
+ Velit scelerisque in dictum non consectetur a erat nam at.
+ Ut diam quam nulla porttitor massa id neque aliquam vestibulum.
+ Aliquam eleifend mi in nulla posuere sollicitudin aliquam.
+ Platea dictumst quisque sagittis purus.
+ Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum.
+ Eros in cursus turpis massa tincidunt dui ut.
+ Neque ornare aenean euismod elementum nisi quis.
+ Condimentum id venenatis a condimentum vitae sapien pellentesque habitant.
+ Turpis tincidunt id aliquet risus feugiat in ante.
+ Quisque non tellus orci ac auctor.
+ Iaculis at erat pellentesque adipiscing commodo elit at.
+ Elit scelerisque mauris pellentesque pulvinar.
+\end_layout
+
+\begin_layout Standard
+Sit amet porttitor eget dolor morbi non arcu risus.
+ Placerat orci nulla pellentesque dignissim enim.
+ Eget magna fermentum iaculis eu non diam phasellus.
+ Vitae semper quis lectus nulla at volutpat diam ut venenatis.
+ Magna fringilla urna porttitor rhoncus.
+ Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum.
+ Ipsum dolor sit amet consectetur adipiscing elit duis.
+ Etiam erat velit scelerisque in dictum.
+ Eu nisl nunc mi ipsum faucibus.
+ Diam quam nulla porttitor massa.
+ Quis commodo odio aenean sed adipiscing.
+ Turpis egestas integer eget aliquet nibh praesent.
+\end_layout
+
+\begin_layout Standard
+Purus sit amet luctus venenatis lectus.
+ Lacus luctus accumsan tortor posuere ac ut consequat.
+ Et tortor consequat id porta nibh venenatis.
+ Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper.
+ Nulla facilisi nullam vehicula ipsum a arcu cursus.
+ Eu ultrices vitae auctor eu augue ut lectus arcu.
+ Consequat id porta nibh venenatis cras sed felis eget.
+ Lectus urna duis convallis convallis tellus id interdum velit.
+ Vel eros donec ac odio tempor orci.
+ Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur.
+ Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.
+ Tellus integer feugiat scelerisque varius.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Bibliography and Appendices
+\end_layout
+
+\begin_layout Standard
+Thie document includes the bibunits package in the LaTeX preamble, in order
+ to have separate reference lists for the main text and the appendix.
+ You can cite a bunch of stuff using bibtex and Zotero.
+ PN and PG are familiar with using the lyz extension.
+ The following method minimizes possible technological pain points by mimicking
+ plain LaTeX as closely as possible.
+\end_layout
+
+\begin_layout Subsection
+Basic Citation Workflow
+\end_layout
+
+\begin_layout Subsubsection
+Do Once - Setting up with Lyx and Zotero .bib files
+\end_layout
+
+\begin_layout Enumerate
+First, export a library of references from Zotero as a .bib file using right
+ click -> Export Items...
+ -> Format BibTex.
+ Save the .bib file in the same directory as the .lyx file.
+\end_layout
+
+\begin_layout Enumerate
+Next, point lyx to the .bib file as follows: Go to the end of the document
+ and do Insert -> List/ToC...
+ -> Bib(la)TeX Bibliography...
+ In the popup, click the Add...
+ button, and in the new popup click the Browse...
+ button, then find the .bib file that was exported from Zotero and click
+ Add.
+\end_layout
+
+\begin_layout Enumerate
+In the same window, under style, click the Browse...
+ button next to the dropdown and navigate to the aea.bst style file in the
+ same directory as the lyx source file.
+ If you do not have the aea.bst style file, download the the LaTeX template
+ from the AEA website: https://www.aeaweb.org/journals/aer/submissions/accepted-ar
+ticles/styleguide.
+\end_layout
+
+\begin_layout Subsubsection
+Adding citations
+\end_layout
+
+\begin_layout Standard
+Now you are ready to add citations to the text.
+ To do so, use the Insert menu in lyx, go to Citation..., find the right citation,
+ and click the Add...
+ button, then the OK button.
+ You can use the 'citation style' dropdown menu to select the citation style
+ Alternatively, after adding the citation you can right click it and change
+ the citation style.
+\end_layout
+
+\begin_layout Standard
+Possible citation stlyles are: with parentheses as in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "adelino_loan_2016"
+literal "false"
+
+\end_inset
+
+, or (if you are in parentheses already then use this style 
+\begin_inset CommandInset citation
+LatexCommand citealt
+key "laibson_estimating_2007"
+literal "false"
+
+\end_inset
+
+).
+ If you want to add it at the end of a sentence, you can do full parenthetical
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "federal_reserve_bank_of_atlanta_2012_2012"
+literal "false"
+
+\end_inset
+
+.
+ And lastly, you can add a citation to the bibliography without it showing
+ up in the text, as I have done at the end of this sentence 
+\begin_inset CommandInset citation
+LatexCommand nocite
+key "cagetti_wealth_2003"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Improved Citation Workflow
+\end_layout
+
+\begin_layout Standard
+Going through a drop-down menu every time when adding a citation is cumbersome.
+ To make this process easier, it is possible to map 'insert citation' to
+ a shortcut.
+ To do so, go to Tools -> Preferences -> Editing -> Shortcuts.
+ From there, enter the following function names in the search box 'show
+ key-binding containing
+\begin_inset Quotes erd
+\end_inset
+
+, select the function names and modify the shortcuts.
+ The following shortcuts are suggested only:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Function Name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Shortcut
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+citation-inset
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ctrl + Alt + C
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+href-insert
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ctrl + K
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+label-insert
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ctrl + Alt + L
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 'citation-insert' function pulls up the menu for selecting a function.
+ This should be as easy as using Lyz (or even easier, since it doesn't required
+ switching out to Zotero).
+ The other functions are included in the list for convenience - you might
+ find them useful ofen enough to map them to shortcuts.
+\end_layout
+
+\begin_layout Standard
+When adding a cite, the paper might already have been cited previously in
+ the .lyx file, and hence the reference already exists in the linked .bib.
+ If so, it is easy to use the shortcut above to add the citation.
+\end_layout
+
+\begin_layout Standard
+However, if the paper is being cited for the first time, it might not be
+ in the .bib file yet.
+ It might be cumbersome to have to re-export the .bib file everytime to add
+ a new citation to the .bib file.
+ To avoid this occuring often, it is useful to simply dump all possibly
+ related papers into the Zotero library, and export a large .bib file which
+ contains all the references.
+ Doing so will not over-populate the end-of-text reference list, since by
+ default bibtex will only show references that are actually used.
+ In addition, if the paper is not already in the .bib file, it might be a
+ smoother workflow to simply add an XXX in the text, and only periodically
+ re-export the .bib file to fill the missing references.
+\end_layout
+
+\begin_layout Section
+Proposed Future Changes to this Document
+\end_layout
+
+\begin_layout Enumerate
+Switch to a workflow where the appendix is in a separate lyx document.
+ To create a single pdf with main text plus appendix, use the input or include
+ commands.
+ See https://wiki.lyx.org/FAQ/Multidoc and section 3.2 of Help -> Additional
+ Features.
+\end_layout
+
+\begin_layout Enumerate
+Compare bibunits, multibib, chapterbib, and biblatex.
+ Decide which is easiest to use and kept updated.
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\family sans
+\series bold
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\family sans
+\series bold
+Income and Spending If Stay Unemployed
+\family default
+\series default
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Inc-spend-if-stay-unemp"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\shape smallcaps
+\size larger
+\begin_inset Graphics
+	filename figures/onset_inc_thru_exhaust.pdf
+	width 65page%
+
+\end_inset
+
+
+\shape default
+\size default
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\shape smallcaps
+\size larger
+\begin_inset Graphics
+	filename figures/onset_spend_thru_exhaust.pdf
+	width 65page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Notes: This figure plots income and spending for the sample that stays unemploye
+d.
+ In months 
+\begin_inset Formula $t=\{-5,-4,-3,-2,-1,0\}$
+\end_inset
+
+, this includes everyone who receives UI at date 0 and meets the sampling
+ criteria described in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Analysis-Sample"
+
+\end_inset
+
+.
+ In month 
+\begin_inset Formula $t=1$
+\end_inset
+
+, this includes only households who continue to receive UI and excludes
+ households who receive their last UI check in month 0.
+ In month 
+\begin_inset Formula $t=2$
+\end_inset
+
+, this excludes households who receive their last UI check in month 0 or
+ month 1, and so on.
+ Employment status after UI exhaustion is measured using paycheck deposits.
+ The vertical line marks UI benefit exhaustion.
+ Income is positive after UI benefit exhaustion because of labor income
+ of other household members.
+ Vertical lines denote 95 percent confidence intervals for change from the
+ prior month.
+ See Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:math"
+
+\end_inset
+
+ for details.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size footnotesize
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Use this command instead of insert -> List/TOC -> Bib(la)tex bibliography,
+ because we use the bibunits package
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+putbib[template]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{bibunit}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\start_of_appendix
+
+\size huge
+Online Appendix
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size larger
+Peter Ganong and Pascal Noel
+\size footnotesize
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\size huge
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addtocontents{toc}{
+\backslash
+protect
+\backslash
+setcounter{tocdepth}{1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tableofcontents
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{bibunit}[apalike]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Figures and Tables
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{figure}{0}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{table}{0}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This resets the figure, table, and page numbering for the appendix.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\family sans
+\series bold
+Work-Related Expenses 
+\family default
+\series default
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:work-related"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\shape smallcaps
+\size larger
+\begin_inset Graphics
+	filename figures/work_exp_bar.pdf
+	width 55page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\shape smallcaps
+\size larger
+
+\begin_inset Graphics
+	filename figures/onset_spend_wr.pdf
+	width 55page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Notes: The top panel compares the change in spending at retirement to the
+ change in spending at the onset of unemployment for debit and credit card
+ expenditures in 16 different merchant categories.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Home imp
+\begin_inset Quotes erd
+\end_inset
+
+ reflects 
+\begin_inset Quotes eld
+\end_inset
+
+Home Improvement
+\begin_inset Quotes erd
+\end_inset
+
+ expenditures and 
+\begin_inset Quotes eld
+\end_inset
+
+Retail n.e.c
+\begin_inset Quotes erd
+\end_inset
+
+ reflects retail spending that is not elsewhere classified.
+ We define retirement as a household aged 62 to 70 that begins receiving
+ Social Security and limit the sample to households with $100,000 in estimated
+ liquid assets so that the change in spending is attributable to increased
+ home production and not financial considerations.
+ We classify expenditure groups with drops greater than the median at retirement
+ (to the left of the vertical line) as 
+\begin_inset Quotes eld
+\end_inset
+
+work related.
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\size footnotesize
+The bottom panel defines work-related expenses as those categories with
+ an above-median drop at retirement and decomposes nondurable spending while
+ unemployed into work-related expenditures on debit and credit card (26
+ percent of pre-onset nondurable spending), non-work-related expenditures
+ on debit and credit card (30 percent) and cash withdrawals and bills (44
+ percent).
+ In online Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:work-related-spending"
+
+\end_inset
+
+, we estimate that two-thirds of the drop in spending on work-related expenses
+ at the onset of unemployment is attributable to the drop in income.
+ 
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Appendix Section
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{10}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Manually set what page numbering to reset at if necessary.
+\end_layout
+
+\end_inset
+
+This section describes how we clean the JPMCI data to classify UI benefit
+ recipients and exhaustees.
+ Within the JPMCI data one can observe direct deposit of UI benefits.
+ Errors in transaction classification lead to measurement error of UI receipt.
+ To overcome this measurement error, we define UI 
+\emph on
+recipients
+\emph default
+ as households that received at least two UI benefit payments.
+ We also require that UI payments must have an amount and frequency which
+ is reasonable given UI program rules – less than $3,000 per month and fewer
+ than six checks per month.
+\end_layout
+
+\begin_layout Standard
+To measure UI duration, we use the difference between the date of the first
+ UI check and the last UI check.
+ In principle, a worker who receives the maximum benefit duration of 26
+ weeks of checks should have 25 weeks elapse between the date on her first
+ UI check and the date on her last UI check.
+  There are several reasons why this assumption may fail to hold in bank
+ account data.
+ A worker could exhaust her UI benefits with fewer than 25 weeks between
+ the first and last check if the state pays benefits biweekly, or if she
+ forgets to pick up her last check as in 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "meyer_unemployment_1990"
+literal "true"
+
+\end_inset
+
+.
+ A household might also have more than 25 weeks between the first and last
+ check because of part-time work while receiving UI, payment errors by the
+ UI agency, multiple household members getting UI, or workers pausing UI
+ benefits.
+\end_layout
+
+\begin_layout Standard
+We use a data-driven approach to find 
+\emph on
+exhaustees
+\emph default
+.
+ First, the modal number of checks received by exhaustees varies by state.
+ For example, among states where benefits last 26 weeks, the modal number
+ of weeks of benefits received is 23 weeks in Texas, 24 weeks in New Jersey
+ and 26 weeks in Illinois.
+ For the three states in our sample where benefits last less than 26 weeks,
+ the mode is 14 weeks in Florida during the time period that benefits last
+ 16 weeks, 17 weeks in Michigan during the time period that benefits last
+ 20 weeks and 13 weeks in Georgia in the the time period that benefits last
+ 18 weeks.
+ 
+\end_layout
+
+\begin_layout Standard
+Second, we use a four-week window around the modal UI duration.
+ We plotted a histogram of the number of weeks between first and last UI
+ check and found significant excess mass in numbers of weeks close to the
+ state-level modal number weeks.
+ We analyzed the evolution of labor income around the last UI check to determine
+ that a four-week window is appropriate.
+ For example, if a state's modal number of weeks was 24, we use a window
+ of 22 weeks through 25 weeks.
+ Below 22 weeks, we saw an uptick in labor income at the end of UI receipt
+ similar to what we observe for much shorter durations (e.g.
+ 10 weeks).
+ Above 25 weeks, there were very few UI recipients.
+\end_layout
+
+\begin_layout Section
+Spending Estimates
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Spending-Defn"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We measure spending
+\emph on
+ 
+\emph default
+on nondurables and durables in order to link empirical results in our data
+ to consumption models.
+ In this appendix, we describe how we categorize bank account outflows (debits
+ from a checking account) by whether they qualify as spending for consumption
+ and if so, how we categorize that spending.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+For example, a transfer of funds to another bank account is an outflow that
+ we do not count as spending.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sit amet porttitor eget dolor morbi non arcu risus.
+ Placerat orci nulla pellentesque dignissim enim.
+ Eget magna fermentum iaculis eu non diam phasellus.
+ Vitae semper quis lectus nulla at volutpat diam ut venenatis.
+ Magna fringilla urna porttitor rhoncus.
+ Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum.
+ Ipsum dolor sit amet consectetur adipiscing elit duis.
+ Etiam erat velit scelerisque in dictum.
+ Eu nisl nunc mi ipsum faucibus.
+ Diam quam nulla porttitor massa.
+ Quis commodo odio aenean sed adipiscing.
+ Turpis egestas integer eget aliquet nibh praesent.
+\end_layout
+
+\begin_layout Standard
+Purus sit amet luctus venenatis lectus.
+ Lacus luctus accumsan tortor posuere ac ut consequat.
+ Et tortor consequat id porta nibh venenatis.
+ Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper.
+ Nulla facilisi nullam vehicula ipsum a arcu cursus.
+ Eu ultrices vitae auctor eu augue ut lectus arcu.
+ Consequat id porta nibh venenatis cras sed felis eget.
+ Lectus urna duis convallis convallis tellus id interdum velit.
+ Vel eros donec ac odio tempor orci.
+ Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur.
+ Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.
+ Tellus integer feugiat scelerisque varius.
+\end_layout
+
+\begin_layout Subsection
+Classifying Spending
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:App-Classify-Spend"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Classifying Spending with Payment Recipient
+\end_layout
+
+\begin_layout Standard
+Sit amet porttitor eget dolor morbi non arcu risus.
+ Placerat orci nulla pellentesque dignissim enim.
+ Eget magna fermentum iaculis eu non diam phasellus.
+ Vitae semper quis lectus nulla at volutpat diam ut venenatis.
+ Magna fringilla urna porttitor rhoncus.
+ Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum.
+ Ipsum dolor sit amet consectetur adipiscing elit duis.
+ Etiam erat velit scelerisque in dictum.
+ Eu nisl nunc mi ipsum faucibus.
+ Diam quam nulla porttitor massa.
+ Quis commodo odio aenean sed adipiscing.
+ Turpis egestas integer eget aliquet nibh praesent.
+\end_layout
+
+\begin_layout Standard
+Purus sit amet luctus venenatis lectus.
+ Lacus luctus accumsan tortor posuere ac ut consequat.
+ Et tortor consequat id porta nibh venenatis.
+ Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper.
+ Nulla facilisi nullam vehicula ipsum a arcu cursus.
+ Eu ultrices vitae auctor eu augue ut lectus arcu.
+ Consequat id porta nibh venenatis cras sed felis eget.
+ Lectus urna duis convallis convallis tellus id interdum velit.
+ Vel eros donec ac odio tempor orci.
+ Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur.
+ Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.
+ Tellus integer feugiat scelerisque varius.
+\end_layout
+
+\begin_layout Standard
+Sit amet porttitor eget dolor morbi non arcu risus.
+ Placerat orci nulla pellentesque dignissim enim.
+ Eget magna fermentum iaculis eu non diam phasellus.
+ Vitae semper quis lectus nulla at volutpat diam ut venenatis.
+ Magna fringilla urna porttitor rhoncus.
+ Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum.
+ Ipsum dolor sit amet consectetur adipiscing elit duis.
+ Etiam erat velit scelerisque in dictum.
+ Eu nisl nunc mi ipsum faucibus.
+ Diam quam nulla porttitor massa.
+ Quis commodo odio aenean sed adipiscing.
+ Turpis egestas integer eget aliquet nibh praesent.
+\end_layout
+
+\begin_layout Standard
+Purus sit amet luctus venenatis lectus.
+ Lacus luctus accumsan tortor posuere ac ut consequat.
+ Et tortor consequat id porta nibh venenatis.
+ Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper.
+ Nulla facilisi nullam vehicula ipsum a arcu cursus.
+ Eu ultrices vitae auctor eu augue ut lectus arcu.
+ Consequat id porta nibh venenatis cras sed felis eget.
+ Lectus urna duis convallis convallis tellus id interdum velit.
+ Vel eros donec ac odio tempor orci.
+ Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur.
+ Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.
+ Tellus integer feugiat scelerisque varius.
+\end_layout
+
+\begin_layout Subsubsection
+Classifying Spending with Payment Method When Payment Recipient is Unavailable
+\end_layout
+
+\begin_layout Standard
+Sit amet porttitor eget dolor morbi non arcu risus.
+ Placerat orci nulla pellentesque dignissim enim.
+ Eget magna fermentum iaculis eu non diam phasellus.
+ Vitae semper quis lectus nulla at volutpat diam ut venenatis.
+ Magna fringilla urna porttitor rhoncus.
+ Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum.
+ Ipsum dolor sit amet consectetur adipiscing elit duis.
+ Etiam erat velit scelerisque in dictum.
+ Eu nisl nunc mi ipsum faucibus.
+ Diam quam nulla porttitor massa.
+ Quis commodo odio aenean sed adipiscing.
+ Turpis egestas integer eget aliquet nibh praesent.
+\end_layout
+
+\begin_layout Standard
+Purus sit amet luctus venenatis lectus.
+ Lacus luctus accumsan tortor posuere ac ut consequat.
+ Et tortor consequat id porta nibh venenatis.
+ Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper.
+ Nulla facilisi nullam vehicula ipsum a arcu cursus.
+ Eu ultrices vitae auctor eu augue ut lectus arcu.
+ Consequat id porta nibh venenatis cras sed felis eget.
+ Lectus urna duis convallis convallis tellus id interdum velit.
+ Vel eros donec ac odio tempor orci.
+ Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur.
+ Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.
+ Tellus integer feugiat scelerisque varius.
+\end_layout
+
+\begin_layout Standard
+Sit amet porttitor eget dolor morbi non arcu risus.
+ Placerat orci nulla pellentesque dignissim enim.
+ Eget magna fermentum iaculis eu non diam phasellus.
+ Vitae semper quis lectus nulla at volutpat diam ut venenatis.
+ Magna fringilla urna porttitor rhoncus.
+ Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum.
+ Ipsum dolor sit amet consectetur adipiscing elit duis.
+ Etiam erat velit scelerisque in dictum.
+ Eu nisl nunc mi ipsum faucibus.
+ Diam quam nulla porttitor massa.
+ Quis commodo odio aenean sed adipiscing.
+ Turpis egestas integer eget aliquet nibh praesent.
+\end_layout
+
+\begin_layout Standard
+Purus sit amet luctus venenatis lectus.
+ Lacus luctus accumsan tortor posuere ac ut consequat.
+ Et tortor consequat id porta nibh venenatis.
+ Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper.
+ Nulla facilisi nullam vehicula ipsum a arcu cursus.
+ Eu ultrices vitae auctor eu augue ut lectus arcu.
+ Consequat id porta nibh venenatis cras sed felis eget.
+ Lectus urna duis convallis convallis tellus id interdum velit.
+ Vel eros donec ac odio tempor orci.
+ Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur.
+ Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.
+ Tellus integer feugiat scelerisque varius.
+\end_layout
+
+\begin_layout Subsection
+Comparison to External Benchmarks
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:App-Compare-Benchmarks"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sit amet porttitor eget dolor morbi non arcu risus.
+ Placerat orci nulla pellentesque dignissim enim.
+ Eget magna fermentum iaculis eu non diam phasellus.
+ Vitae semper quis lectus nulla at volutpat diam ut venenatis.
+ Magna fringilla urna porttitor rhoncus.
+ Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum.
+ Ipsum dolor sit amet consectetur adipiscing elit duis.
+ Etiam erat velit scelerisque in dictum.
+ Eu nisl nunc mi ipsum faucibus.
+ Diam quam nulla porttitor massa.
+ Quis commodo odio aenean sed adipiscing.
+ Turpis egestas integer eget aliquet nibh praesent.
+\end_layout
+
+\begin_layout Subsubsection
+Comparison Using Data Aggregated to Monthly Level
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:master-benchmark"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sit amet porttitor eget dolor morbi non arcu risus.
+ Placerat orci nulla pellentesque dignissim enim.
+ Eget magna fermentum iaculis eu non diam phasellus.
+ Vitae semper quis lectus nulla at volutpat diam ut venenatis.
+ Magna fringilla urna porttitor rhoncus.
+ Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum.
+ Ipsum dolor sit amet consectetur adipiscing elit duis.
+ Etiam erat velit scelerisque in dictum.
+ Eu nisl nunc mi ipsum faucibus.
+ Diam quam nulla porttitor massa.
+ Quis commodo odio aenean sed adipiscing.
+ Turpis egestas integer eget aliquet nibh praesent.
+\end_layout
+
+\begin_layout Standard
+Purus sit amet luctus venenatis lectus.
+ Lacus luctus accumsan tortor posuere ac ut consequat.
+ Et tortor consequat id porta nibh venenatis.
+ Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper.
+ Nulla facilisi nullam vehicula ipsum a arcu cursus.
+ Eu ultrices vitae auctor eu augue ut lectus arcu.
+ Consequat id porta nibh venenatis cras sed felis eget.
+ Lectus urna duis convallis convallis tellus id interdum velit.
+ Vel eros donec ac odio tempor orci.
+ Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur.
+ Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.
+ Tellus integer feugiat scelerisque varius.
+\end_layout
+
+\begin_layout Standard
+Sit amet porttitor eget dolor morbi non arcu risus.
+ Placerat orci nulla pellentesque dignissim enim.
+ Eget magna fermentum iaculis eu non diam phasellus.
+ Vitae semper quis lectus nulla at volutpat diam ut venenatis.
+ Magna fringilla urna porttitor rhoncus.
+ Volutpat sed cras ornare arcu dui vivamus arcu felis bibendum.
+ Ipsum dolor sit amet consectetur adipiscing elit duis.
+ Etiam erat velit scelerisque in dictum.
+ Eu nisl nunc mi ipsum faucibus.
+ Diam quam nulla porttitor massa.
+ Quis commodo odio aenean sed adipiscing.
+ Turpis egestas integer eget aliquet nibh praesent.
+\end_layout
+
+\begin_layout Standard
+Purus sit amet luctus venenatis lectus.
+ Lacus luctus accumsan tortor posuere ac ut consequat.
+ Et tortor consequat id porta nibh venenatis.
+ Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper.
+ Nulla facilisi nullam vehicula ipsum a arcu cursus.
+ Eu ultrices vitae auctor eu augue ut lectus arcu.
+ Consequat id porta nibh venenatis cras sed felis eget.
+ Lectus urna duis convallis convallis tellus id interdum velit.
+ Vel eros donec ac odio tempor orci.
+ Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur.
+ Enim nunc faucibus a pellentesque sit amet porttitor eget dolor.
+ Tellus integer feugiat scelerisque varius.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+putbib[template]
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{bibunit}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

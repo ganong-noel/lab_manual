@@ -1,0 +1,204 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{xr}
+\externaldocument{template}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Cross-referencing (e.g.
+ for referee letters)
+\end_layout
+
+\begin_layout Section*
+Cross-referencing across documents
+\end_layout
+
+\begin_layout Subsection*
+Example
+\end_layout
+
+\begin_layout Standard
+It is possible to cross-reference figures, tables, section numbers, etc.
+ in other Lyx documents.
+ For example, I can refer to figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Inc-spend-if-stay-unemp"
+
+\end_inset
+
+ and section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:References"
+
+\end_inset
+
+ from template.lyx.
+\end_layout
+
+\begin_layout Subsection*
+Details
+\end_layout
+
+\begin_layout Standard
+For further reference, please see Stackoverflow question: https://tex.stackexchan
+ge.com/questions/39772/using-the-xr-package-in-lyx-for-cross-referencing-an-exter
+nal-lyx-document.
+ The following instructions are exercepted from the Stackoverflow link.
+\end_layout
+
+\begin_layout Subsubsection*
+Setup
+\end_layout
+
+\begin_layout Enumerate
+In the referencing document (this document, cross_ref.lyx), go to Document
+ -> Settings..
+ and add 
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+usepackage{xr}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+externaldocument{template}
+\end_layout
+
+\end_inset
+
+ to the LaTeX preamble.
+ This tells the referencing document to search for template.aux to use for
+ references.
+\end_layout
+
+\begin_layout Enumerate
+Next, we need to generate template.aux from the parent document.
+ The .aux file is generated when lyx compiles the document, and usually resides
+ in a system temporary directory.
+ This directory is a subdirectory of the temporary directory listed in Tools
+ -> Preferences -> Paths.
+\end_layout
+
+\begin_layout Enumerate
+After generating and locating the template.aux file, copy and paste it into
+ the same directory as the referencing file (cross_ref.lyx).
+\end_layout
+
+\begin_layout Subsubsection*
+Usage
+\end_layout
+
+\begin_layout Standard
+Lyx does not natively support the xr package, so cross-references will not
+ show up as options in the cross-referencing dialog.
+ In addition, the references will show as BROKEN in the lyx document, but
+ will render fine in the PDF.
+\end_layout
+
+\begin_layout Enumerate
+To reference an item from the main document, either do "Insert->TeX Code"
+ and put 
+\backslash
+ref{referenced_label1} in by hand, or keep referenced.lyx open, right-click
+ on the label you want to reference and choose "Copy as reference", and
+ then paste into referencing.lyx at the point where you want to make the
+ reference.
+\end_layout
+
+\begin_layout Enumerate
+One way to get around the BROKEN prefix in references if it annoys you is
+ to put referencing.lyx as a child document (Insert -> File -> Child Document)
+ within a LyX note of the main referenced.lyx.
+ Then its labels will show in the cross-reference dialog in LyX, but because
+ the inclusion is within a LyX note, it won't get rendered in the .pdf.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,12 @@
+data_path:
+  sipp2008: "../data_sipp/data/2008/"
+  psid: "../data_psid/data/"
+  scf: "../data_scf/data/"
+  fannie: "../data_fannie/data/"
+  temp: "analysis/input/temp"
+  data: "analysis/input/data"
+
+lab_code: "../lab_code/"
+
+build_path: 
+  campbell: "build/structural_model_fortran"
