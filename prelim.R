@@ -47,9 +47,11 @@ fte_theme <- function(font_family = "serif",
     theme(axis.text=element_text(size = rel(1), color=color.axis.text)) +
     theme(axis.title.x=element_text(color = color.axis.title, vjust=0)) +
     theme(axis.title.y=element_text(color = color.axis.title, vjust=1.25)) +
+  
+    # Position plot title
+    theme(plot.title.position = "plot") + 
 
     #colour and size caption
-
     theme(plot.caption = element_text(color = color.axis.title)) +
     # Plot margins
     theme(plot.margin = unit(c(0.35, 0.2, 0.3, 0.35), "cm"))
